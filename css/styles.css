@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+
+
+}
+.header-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.logo{
+    height: 80px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.logo h1 b{
+    color:#f583b8;
+}
+
+.menu{
+    height: 80px;
+    
+}
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.menu nav ul li{
+    height:100%;
+    color:rgb(212, 51, 191);
+    
+    /* margen: <vertical> <horizontal> */
+
+    margin:0% 20px;
+    
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+}
+
+.menu-selected:before{
+    content:"";
+    width:100%;
+    height:4px;
+    background-color:rgb(105, 105, 230);
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.menu nav ul li a{
+    color:rgb(0, 0, 0);
+    transition: color 300ms;
+    
+}
+
+.menu nav ul li a:hover{
+    color:rgb(255, 0, 0);
+    
+}
+
+.menu .text-menu-selected{
+    color:rgb(212, 51, 191);
+    
+}
+/* 
+Portada */
+
+.container-cover{
+    width:100%;
+    height: 500px;
+    position: relative;
+    margin-top:80px;
+    background-image: url(../images/imag.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover:before{
+    content:"";
+    width:100%;
+    height:100%;
+    background: rgba(167, 81, 110, 0.4);
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+
+.container-info-cover{
+    max-width:800px;
+    height:500px;
+    margin:auto;
+    
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.container-info-cover h1{
+    font-size:60px;
+    font-weight: 500;
+    color:white;
+    margin-bottom:20px;
+
+}
+.container-info-cover p{
+    color:white;
+    font-size:20px;
+    font-weight:300;
+}
+
+
+
+
+
+
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top:40px;
+
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    position: relative;
+    border-radius:6px;
+    overflow: hidden;
+}
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: pink;
+}
