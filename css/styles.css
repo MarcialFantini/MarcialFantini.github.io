@@ -178,3 +178,86 @@ article:before{
     left: 0;
     background-color: pink;
 }
+
+article h1{
+    margin-top:20px;
+    font-weight: 500;
+    font-size:40px;
+}
+
+article p{
+    margin-top:20px;
+    font-size: 18px;
+    color:gray;
+}
+article img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* footer */
+
+.container-footer footer{
+    width: 100%;
+    padding:40px;
+    background-color: white;
+    margin-top: 40px;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width:100px;
+
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font: size 20px;
+    margin: 20px;
+    background-color:rgb(240, 234, 234);
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    calor:rgb(228, 216, 216);
+}
+
+
+footer .redes-footer .fa-facebook-f:hover{
+    background:blue;
+    color:#fff;
+}
+
+footer .redes-footer .fa-google-plus-g:hover{
+    background:red;
+    color:#fff;
+}
+
+footer .redes-footer .fa-instagram:hover{
+    background:purple;
+    color:#fff;
+}
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background:gray;
+}
+
+.container-footer h4{
+    text-align: center;
+    margin-top:40px;
+    color:gray;
+    font-weight: 500;
+}
